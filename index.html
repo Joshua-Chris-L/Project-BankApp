@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"> </script>
+    <title> Document </title>
+</head>
+<body>
+    <nav class="nav_bar"> 
+        <h1>Welcome back, Joshua</h1>
+        <img src="logo.png">
+        <form >
+            <input class="login_input" placeholder="Username">
+            <input class="login_input" placeholder="Password">
+            <button class="login_button"> &rightarrow;</button> 
+        </form>
+    </nav>
+
+    <div class="balance">
+        <div> 
+            <h1> Current  balance </h1>
+            <span> As of 29/04/2023, 02:52 </span>
+        </div>
+        <div>25 952,95 € </div>
+    </div>
+
+    <div class="account_balance">
+        <!-- deposit and withdrawals -->
+        <div class="deposit_withdrawal">  
+            <!-- deposit container   -->
+            <div class="grid-container"> 
+                <div class="grid-item grid-item-1">   
+                    <div class="deposit_container"> <span> 8 DEPOSIT </span> </div>
+                    <div class="date"> 28/07/2020 </div>
+                    <div class="amount"> 13000, 00 € </div>
+                </div>
+            </div>
+
+            <!-- withdrawal container -->
+            <div class="grid-container"> 
+                <div class="grid-item grid-item-1">   
+                    <div class="withdrawal_container"> <span> 8 WITHDRAWAL </span> </div>
+                    <div class="date"> 28/07/2020 </div>
+                    <div class="amount"> 13000, 00 € </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- transfer, request, close account -->
+       <div class="grid-container transfer_others"> 
+        
+            <!-- Transfer Money -->
+            <div class="transfer_container"> 
+                <h3> Transfer Money </h3>
+                <div class="transfer_details"> 
+                    <input type="text" class="input_transfer" />
+                    <input type="number" class="input_transfer" />
+                    <button class="input_button"> &rightarrow; </button>
+                </div>
+                <div class="description"> 
+                    <div> Transfer to </div>
+                    <div> Amount </div>
+                </div>
+            </div>
+
+             <!-- Request Loan -->
+            <div class="transfer_container"> 
+                <h3> Request Loan </h3>
+                <div class="request_details"> 
+                    <input type="number" class="request_input" />
+                    <button class="request_button"> &rightarrow; </button>
+                </div>
+                <div class="description"> 
+                    <div> Amount</div>
+                </div>
+            </div>
+
+            <!-- Close Account -->
+            <div class="transfer_container"> 
+                <h3> Close Account </h3>
+                <div class="transfer_details"> 
+                    <input type="text" class="input_transfer" />
+                    <input type="number" class="input_transfer" />
+                    <button class="input_button"> &rightarrow; </button>
+                </div>
+                <div class="description"> 
+                    <div> Confirm User </div>
+                    <div> Confirm PIN </div>
+                </div>
+            </div>          
+        </div>
+    </div> 
+     <!-- summary -->
+    <div class="summary">
+        <p> IN </summaryp>
+        <p class="summary_amount"> 27 035, 20 € </p>
+        <p> OUT </p>
+        <p class="summary_amount"> 1082,61 € </p>
+        <p> INTEREST </p>
+        <P class="summary_amount"> 323, 46 € </P>
+        <button> &DownArrow; SORT </button>
+    </div>
+    <p class="summary"> 
+       You will be logged out in  <span class="timer">  05:00  </span>
+    </p>
+</body>
+</html>
